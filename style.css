@@ -1,0 +1,58 @@
+body{
+    align-items: center;
+    background: linear-gradient(45deg,#333333, black)
+}
+.hello{
+    text-shadow: 1px 1px 3px white;
+    color:white ;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:xx-large;
+    padding: 10px;
+}
+.main{
+    text-align: center;
+    padding-inline: 5px;
+}
+.video{ 
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid red;
+    animation: blink-lights 1s infinite;
+    border-radius: 10px;
+
+}
+@keyframes blink-lights {
+    0%{ border-color: red; box-shadow: 0 0 10px red;}
+    25% { border-color: yellow ; box-shadow: 0 0 10px yellow;}
+    50% { border-color: lime; box-shadow: 0 0 10px lime ;}
+    75% { border-color: cyan; box-shadow: 0 0 10px cyan;}
+    100% { border-color: red; box-shadow: 0 0 10px red;}
+}
+.playagain{
+    background-color: aquamarine;
+    color: black;
+    padding: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifS;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+.rateus{
+    background-color:aquamarine;
+    color: black;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+    border-radius:10px ;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+}
+.thanks{
+    display: none;
+    color: azure;
+    margin-top: 10px;
+}
+#rate:checked + .thanks{
+    display: block;
+}
