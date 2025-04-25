@@ -1,6 +1,6 @@
 body{
     align-items: center;
-    background: linear-gradient(45deg,#333333, black)
+    background: black
 }
 .hello{
     text-shadow: 1px 1px 3px white;
